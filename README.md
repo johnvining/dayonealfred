@@ -11,9 +11,9 @@ At this point, this Alfred Workflow requires:
 
 * **log**: Logs to day one. This can use the time syntax outlined [here](http://brettterpstra.com/2012/01/16/logging-with-day-one-geek-style/).
 * **lw**: "Log Web". This creates an entry with the frontmost webpage link and title:  
-> Reading: [Pulled pork - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Pulled_pork)
+	Reading: [Pulled pork - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Pulled_pork)
 * **lwc**: "Log Web Comment". Same as above but with a comment:  
-> Reading: [Meatloaf - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Meatloaf): What a fantastic source of protein!
+	Reading: [Meatloaf - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Meatloaf): What a fantastic source of protein!
 
 
 ### To do
