@@ -10,10 +10,12 @@ At this point, this Alfred Workflow requires:
 ### What it does
 
 * `log` logs to Day One. This can use the time and starring syntax outlined [here](http://brettterpstra.com/2012/01/16/logging-with-day-one-geek-style/).
-* `lw`, "log web", logs the frontmost website and title as a link.  
-	> Reading: [Pulled pork - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Pulled_pork)
-* `lw delicious!` does the same, but with a comment:  
-	> Reading: [Meatloaf - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Meatloaf) - delicious!
+* `lw`, "log web", logs the frontmost website and title as a link:
+
+	>Reading: [Pulled pork - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Pulled_pork)
+* `lw delicious!` does the same, but with a comment:
+
+	>Reading: [Meatloaf - Wikipedia, the free encyclopedia](http://en.wikipedia.org/wiki/Meatloaf) - delicious!
 * `lw!` does the same as above as a starred entry.
 
 When you first import it, you will want to:
