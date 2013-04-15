@@ -1,6 +1,6 @@
 ## Day One Alfred Tools
 
-[Here](http://www.alfredforum.com/topic/1436-day-one-tools-logging-and-logging-from-safari/) is my post about this workflow of the Alfred forum. You can request features there.
+[Here](http://www.alfredforum.com/topic/1436-day-one-tools-logging-and-logging-from-safari/) is my post about this workflow of the Alfred forum. You can request features there. If you have any questions or comments, I'd love to hear them there or by email at <johnvining@gmail.com>.
 
 ### What it needs
 
