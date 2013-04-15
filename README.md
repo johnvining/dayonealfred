@@ -1,5 +1,7 @@
 ## Day One Alfred Tools
 
+[Here](http://www.alfredforum.com/topic/1436-day-one-tools-logging-and-logging-from-safari/) is my post about this workflow of the Alfred forum. You can request features there.
+
 ### What it needs
 
 At this point, this Alfred Workflow requires:
@@ -14,7 +16,7 @@ When you first import it, you will want to:
 * Change the location of `logtodayone.rb` in the `lw` script
 * Change, if you'd like, the variables for formatting in the `lw` script
 	* `prefix`: What comes before a link. Default is `Reading: `
-	* `separator`: What separates a link and a comment. Default is ` - `. Change to "\n\n" if you would like the comment to be on a separate line.
+	* `separator`: What separates a link and a comment. Default is ` - `. Change to `\n\n` if you would like the comment to be on a separate line.
 	* `quoteSeparator`: What separates a link and a quote. Default is `:\n\n>`.
 
 ### What it does
@@ -36,16 +38,19 @@ When you first import it, you will want to:
 
 ### What it doesn't do yet
 
-Eventually, I'd like to:
+##### Features
 
-* Combine the scripts.
-* Catch errors when the script can't get to safari. Currently, a notification appears with just a header and no error.
-* Add a version for Chrome and Firefox. Not sure if this is possible at the moment.
+* Add a `lwq comment` function.
 * Create an easier way to change the location of `logtodayone.rb` in each of the scripts, preferably through Alfred itself.
+* Combine the `log` and `lw` scripts.
+* Add support for Chrome and Firefox.
 * Incorporate Terpstra's time functions in the web-logging commands.
-* Add more commands. Ideas are very welcome.
 
-[Here](http://www.alfredforum.com/topic/1436-day-one-tools-logging-and-logging-from-safari/) is my post about this workflow of the Alfred forum.
+
+##### Bugs
+
+* Tick marks don't work.
+* When the script can't get to Safari, it fails silently.
 
 ### What's changed
 
