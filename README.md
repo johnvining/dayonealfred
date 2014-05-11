@@ -7,14 +7,11 @@
 At this point, this Alfred Workflow requires:
 
 * [The Day One CLI](http://dayoneapp.com/tools/)
-* Brett Terpstra's `logtodayone.rb` script, found [here](http://brettterpstra.com/2012/01/16/logging-with-day-one-geek-style/)
 * That you're using Safari
 
-When you first import it, you will want to:
+(It used to require a Ruby script by Bret Terpstra but I decided the ease of installation beat out his date logic. I assume most people weren't using it.)
 
-* Change the location of `logtodayone.rb` in the `log` script
-* Change the location of `logtodayone.rb` in the `lw` script
-* Change, if you'd like, the variables for formatting in the `lw` script
+When you first import it, change, if you'd like, the variables for formatting in the `lw` script
 	* `prefix`: What comes before a link. Default is `Reading: `
 	* `separator`: What separates a link and a comment. Default is ` - `. Change to `\n\n` if you would like the comment to be on a separate line.
 	* `quoteSeparator`: What separates a link and a quote. Default is `:\n\n>`.
@@ -53,6 +50,9 @@ When you first import it, you will want to:
 * When the script can't get to Safari, it fails silently.
 
 ### What's changed
+
+##### 2014-05-11:
+* Switched over to just use the Day One CLI. I imagine this will be about three times easier to get set up and doesn't lose much functionality.
 
 ##### 2013-04-15b:
 
