@@ -1,19 +1,28 @@
 on alfred_script(q)
+	-- Set the Browser you want to use, e.g. "Safari" or "Chrome"
+	set browser to "Safari"
 	-- Set what comes before the link in your entry
-	set prefix to "Reading "
+	set prefix to "Reading: "
 	-- Set what comes after the link in your entry, use `\n\n` to put comments on new line
-	set separator to " "
+	set separator to " - "
 	-- Set what separates the link and the clipboard text
-	set quoteSeparator to " ooooo "
+	set quoteSeparator to ":\n\n>"
 	
 	set entry to ""
-	set feedback to "NO SCRIPT RAN!"
+	set feedback to "Error!"
 	set starred to False
 	
-	tell application "Safari"
-		set theTitle to name of front document
-		set theURL to URL of front document
-	end tell
+	if browser is equal to "Safari"
+		tell application "Safari"
+			set theTitle to name of front document
+			set theURL to URL of front document
+		end tell
+	else if browser equals "Chrome"
+		tell application "Google Chrome"
+			set theTitle to title of active tab of front window
+			set theURL to URL of active tab of front window
+		end tell
+	end if
 	
 	if q is equal to ""
 		-- Without Comment or Star
@@ -44,7 +53,7 @@ on alfred_script(q)
 			set urlStr to prefix & "[" & theTitle & "](" & theURL & ")"
 			set entry to urlStr & quoteSeparator & clippy
 			set feedback to theTitle & "\n>" & clippy
-		else if charcter 2 of q is equal to "!"
+		else if character 2 of q is equal to "!"
 			-- With Star 
 			set urlStr to prefix & "[" & theTitle & "](" & theURL & ")"
 			set entry to urlStr & quoteSeparator & clippy
